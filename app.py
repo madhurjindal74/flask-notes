@@ -15,7 +15,7 @@ def load_notes():
             return json.load(f)
     return []
 
-def save_notes(notes):   #it saves notes to a json
+def save_notes(notes):   #it saves notes to a json file
     """Save the provided list of notes to NOTES_FILE in JSON format."""
     with open(NOTES_FILE, 'w') as f:
         json.dump(notes, f)
